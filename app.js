@@ -45,7 +45,7 @@ const app = express();
 
 // IMPORTANT MIDDLEWARE
 app.use(cors({
-  origin: ['http://localhost:3000'],
+  origin: ['http://localhost:3000', 'https://neuralchat-frontend-prod.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   credentials: true
 }));
