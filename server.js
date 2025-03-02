@@ -8,7 +8,6 @@ dotenv.config({ path: './.env' });
 
 const PORT = process.env.PORT || 7000;
 
-// initialize websockets server
 const server = http.createServer(app);
 const socketManager = new SocketManager(server);
 
